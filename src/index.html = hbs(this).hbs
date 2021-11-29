@@ -1,3 +1,7 @@
+---
+title: Nature
+imageNames = keys(images):
+---
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -12,7 +16,7 @@
   </head>
   <body>
     <h1>{{title}}</h1>
-    {{#each images}}
+    {{#each imageNames}}
     <a href="images/{{this}}">
       <img src="thumbnails/{{this}}">
     </a>
