@@ -7,7 +7,7 @@
     "sharp": "0.29.1"
   },
   "scripts": {
-    "build": "eg copy static:app:src, files:dist",
+    "build": "eg copy netlify:app:src, files:dist",
     "start": "eg serve"
   }
 }
