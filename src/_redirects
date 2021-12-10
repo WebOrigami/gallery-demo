@@ -1,1 +1,1 @@
-*/.keys.json :splat/keys.json 200!
+/*/.keys.json /:splat/keys.json 200
