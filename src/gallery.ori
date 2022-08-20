@@ -1,6 +1,5 @@
 ---
 title: Nature
-imageNames = keys(images):
 ---
 <!DOCTYPE html>
 <html lang="en">
@@ -16,10 +15,10 @@ imageNames = keys(images):
   </head>
   <body>
     <h1>{{title}}</h1>
-    {{#each imageNames}}
-      <a href="images/{{this}}">
-        <img src="thumbnails/{{this}}">
-      </a>
-    {{/each}}
+{{#map images}}
+    <a href="images/{{@key}}">
+      <img src="thumbnails/{{@key}}">
+    </a>
+{{/map}}
   </body>
 </html>

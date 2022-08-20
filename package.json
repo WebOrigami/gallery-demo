@@ -3,11 +3,11 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@explorablegraph/explorable": "github:ExplorableGraph/explorable#0f4658d9",
-    "sharp": "0.29.1"
+    "@explorablegraph/explorable": "0.0.16",
+    "sharp": "0.30.7"
   },
   "scripts": {
-    "build": "eg copy netlify:app:src, files:dist",
-    "start": "eg serve"
+    "build": "ori copy 'netlify(virtual/src)', files/dist",
+    "start": "ori serve"
   }
 }
