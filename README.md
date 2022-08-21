@@ -18,6 +18,8 @@ To apply the `thumbnail` function to all images in the `images` folder and save 
 $ ori "copy map(images, thumbnail), files/thumbs"
 ```
 
+The `map` command works against a flat folder — if you want to transform a hierarchy of folders containing images, use `mapDeep` instead.
+
 To view the thumbnails in the browser:
 
 ```console
