@@ -23,9 +23,10 @@ export default function imageFormats(graph) {
     },
 
     async get(key) {
-      // Match the key against the format of the file names we expose.
+      // Match the key against the format of the file names we support.
       // Example: 200w-image1.avif
-      const regex = /^((?<width>\d+)w-)?(?<basename>.*).(?<type>avif|webp)$/;
+      const regex =
+        /^((?<width>\d+)w-)?(?<basename>.*).(?<type>avif|gif|png|tiff|webp)$/;
       const match = key.match(regex);
       if (!match) {
         // Not a generated image file, return as is.
