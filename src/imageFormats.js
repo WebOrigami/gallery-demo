@@ -10,11 +10,11 @@ export default function imageFormats(graph) {
           // Each .jpg file generates a set of images at various sizes/types.
           const basename = key.slice(0, -4);
           yield `${basename}.avif`;
-          yield `200w-${basename}.avif`;
-          yield `500w-${basename}.avif`;
           yield `${basename}.webp`;
-          yield `200w-${basename}.webp`;
-          yield `500w-${basename}.webp`;
+          yield `${basename}-w200.avif`;
+          yield `${basename}-w200.webp`;
+          yield `${basename}-w500.avif`;
+          yield `${basename}-w500.webp`;
         } else {
           // Other file names are returned as is.
           yield key;
@@ -26,7 +26,7 @@ export default function imageFormats(graph) {
       // Match the key against the format of the file names we support.
       // Example: 200w-image1.avif
       const regex =
-        /^((?<width>\d+)w-)?(?<basename>.*).(?<type>avif|gif|png|tiff|webp)$/;
+        /^(?<basename>.+?)(-w(?<width>\d+))?.(?<type>avif|gif|png|tiff|webp)$/;
       const match = key.match(regex);
       if (!match) {
         // Not a generated image file, return as is.
