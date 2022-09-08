@@ -1,2 +1,3 @@
+formats = imageFormats(images):
 gallery.html = gallery.ori():
 thumbnails = map(images, thumbnail):
