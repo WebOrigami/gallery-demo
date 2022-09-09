@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@explorablegraph/explorable": "0.0.17",
+    "@explorablegraph/explorable": "github:ExplorableGraph/explorable#b32cf066",
     "sharp": "0.30.7"
   },
   "scripts": {
