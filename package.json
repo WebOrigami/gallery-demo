@@ -1,13 +1,13 @@
 {
-  "name": "gallery-test",
+  "name": "gallery-demo",
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@explorablegraph/explorable": "github:ExplorableGraph/explorable#c55ce8ef",
-    "sharp": "0.30.7"
+    "@graphorigami/origami": "github:GraphOrigami/origami#b1d83b7b",
+    "sharp": "0.31.3"
   },
   "scripts": {
-    "build": "ori copy 'netlify(virtual/src)', files/dist",
-    "start": "ori serve"
+    "build": "ori copy src/site.graph, files/dist",
+    "start": "ori serve watch src, =debug src/site.graph"
   }
 }
