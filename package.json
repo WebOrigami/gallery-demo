@@ -3,11 +3,14 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@graphorigami/origami": "github:GraphOrigami/origami#b1d83b7b",
+    "@graphorigami/origami": "0.0.25",
     "sharp": "0.31.3"
   },
+  "glitch": {
+    "projectType": "generated_static"
+  },
   "scripts": {
-    "build": "ori copy src/site.graph, files/dist",
-    "start": "ori serve watch src, =debug src/site.graph"
+    "build": "ori @copy src/site.graph, @files/build",
+    "start": "ori @serve @watch src, =@debug site.graph"
   }
 }
