@@ -6,6 +6,10 @@
     "@graphorigami/origami": "0.0.25",
     "sharp": "0.31.3"
   },
+  "engines": {
+    "node": ">=16.14.2"
+  },
+  "license": "MIT",
   "glitch": {
     "projectType": "generated_static"
   },
