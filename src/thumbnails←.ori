@@ -1,0 +1,1 @@
+=@map(images, =@image/resize(_, { width: 200 }))
