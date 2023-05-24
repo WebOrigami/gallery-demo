@@ -1,4 +1,0 @@
-# netlify won't deploy a file whose name starts with a splat, preventing us from
-# deploying .keys.json files. See the `netlify` command in the root folder.
-
-/*/.keys.json /:splat/keys.json 200

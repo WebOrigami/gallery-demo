@@ -1,3 +1,3 @@
-index.html = index.ori()
 images
-thumbnails = @map/values(images, thumbnail)
+index.html = index.ori()
+thumbnails = @map/values(images, =@image/resize(@value, { width: 200 }))
