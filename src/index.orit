@@ -12,7 +12,7 @@
   </head>
   <body>
     <h1>Nature</h1>
-    {{ @map/values images, =`
+    {{ @tree/map images, =`
     <a href="images/{{ @key }}">
       <img src="thumbnails/{{ @key }}">
     </a>
