@@ -1,0 +1,5 @@
+<ul>
+{{ @tree/map(team.yaml, =`
+  <li>{{ _/name }}</li>
+`) }}
+</ul>
