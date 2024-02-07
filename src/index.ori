@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+=`<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,10 +12,11 @@
   </head>
   <body>
     <h1>Nature</h1>
-    {{ @tree/map images, =`
+    {{ @map(_, =`
     <a href="images/{{ @key }}">
       <img src="thumbnails/{{ @key }}">
     </a>
-    ` }}
+    `) }}
   </body>
 </html>
+`

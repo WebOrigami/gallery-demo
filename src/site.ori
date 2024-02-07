@@ -1,5 +1,5 @@
 {
   images
-  index.html = index.orit()
-  thumbnails = @tree/map(images, =@image/resize(_, { width: 200 }))
+  index.html = index.ori(images)
+  thumbnails = @map(images, =@image/resize(_, { width: 200 }))
 }
