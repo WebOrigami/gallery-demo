@@ -3,7 +3,7 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "https://gitpkg.now.sh/WebOrigami/origami/origami?136aab43",
+    "@weborigami/origami": "https://gitpkg.now.sh/WebOrigami/origami/origami?239c127b",
     "sharp": "0.31.3"
   },
   "engines": {
