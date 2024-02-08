@@ -1,5 +1,5 @@
 {
   images
   index.html = index.ori(images)
-  thumbnails = @map(images, =@image/resize(_, { width: 200 }))
+  thumbnails = @map(images, @image/resize({ width: 200 }))
 }
