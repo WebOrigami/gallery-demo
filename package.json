@@ -6,9 +6,6 @@
     "@weborigami/origami": "https://gitpkg.now.sh/WebOrigami/origami/origami?239c127b",
     "sharp": "0.31.3"
   },
-  "engines": {
-    "node": ">=16.14.2"
-  },
   "license": "MIT",
   "glitch": {
     "projectType": "generated_static"
