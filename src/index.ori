@@ -1,4 +1,5 @@
-=`<!DOCTYPE html>
+(images) =>
+`<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
@@ -12,9 +13,9 @@
   </head>
   <body>
     <h1>Nature</h1>
-    {{ @map(_, =`
-    <a href="images/{{ @key }}">
-      <img src="thumbnails/{{ @key }}">
+    {{ @map(images, (image, filename) => `
+    <a href="images/{{ filename }}">
+      <img src="thumbnails/{{ filename }}">
     </a>
     `) }}
   </body>
