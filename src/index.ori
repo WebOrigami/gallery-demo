@@ -13,11 +13,11 @@
   </head>
   <body>
     <h1>Nature</h1>
-{{ @map(images, (image, filename) => `
-    <a href="images/{{ filename }}">
-      <img src="thumbnails/{{ filename }}">
+${ @map(images, (image, filename) => `
+    <a href="images/${ filename }">
+      <img src="thumbnails/${ filename }">
     </a>
-`) }}
+`) }
   </body>
 </html>
 `
