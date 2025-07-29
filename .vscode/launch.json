@@ -5,13 +5,16 @@
   "version": "0.2.0",
   "configurations": [
     {
+      // This configuration tells VS Code to launch the project via `npm start`.
       "type": "node",
       "request": "launch",
-      "name": "Launch Program",
+      "name": "Launch via npm",
+      "cwd": "${workspaceFolder}",
       "skipFiles": ["<node_internals>/**"],
-      "program": "${workspaceFolder}/node_modules/@weborigami/origami/src/cli/cli.js",
-      "runtimeArgs": ["--preserve-symlinks"],
-      "args": ["@serve @watch src, =@debug site.ori"]
+      "runtimeExecutable": "npm",
+      // If using nvm, uncomment the line below and specify the node version.
+      "runtimeVersion": "22",
+      "runtimeArgs": ["--preserve-symlinks", "run-script", "start"]
     }
   ]
 }

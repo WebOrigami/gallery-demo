@@ -1,5 +1,5 @@
 {
-  images
-  index.html = index.ori(images)
-  thumbnails = @map(images, @image/resize({ width: 200 }))
+  images/
+  index.html = index.ori.html(images/)
+  thumbnails = Tree.map(images/, (_) => Origami.image.resize(_, { width: 200 }))
 }
