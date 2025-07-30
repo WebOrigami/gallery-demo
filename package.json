@@ -3,12 +3,9 @@
   "version": "0.0.1",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "0.3.4-jse.4"
+    "@weborigami/origami": "0.3.4-jse.6"
   },
   "license": "MIT",
-  "glitch": {
-    "projectType": "generated_static"
-  },
   "scripts": {
     "build": "ori copy src/site.ori, clean files:build",
     "start": "ori serve watch src, =debug src/site.ori"
